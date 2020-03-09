@@ -6,7 +6,8 @@ QX:
 [rewrite_local]
 
 https:\/\/.*\..*\.com\/(vod\/reqplay\/|ucp/index|getGlobalData) url script-response-body xxys.js
-
+or
+https:\/\/.*\..*\.com\/(vod\/reqplay\/|ucp/index|getGlobalData) url script-response-body https://raw.githubusercontent.com/kai2ou/ScriptsGather/master/xxys.js
 
 MITM = *.*apps.com, *.xiao*.com
 
