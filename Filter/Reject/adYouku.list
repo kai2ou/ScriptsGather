@@ -1,0 +1,4 @@
+# > Youku
+DOMAIN-SUFFIX,atm.youku.com,REJECT
+DOMAIN,ad.mobile.youku.com,REJECT
+DOMAIN,iyes.youku.com,REJECT
