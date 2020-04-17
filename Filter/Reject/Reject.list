@@ -6,3 +6,4 @@ DOMAIN-SUFFIX,ap.dongqiudi.com,REJECT
 DOMAIN-SUFFIX,sdk.e.qq.com,REJECT
 # 豆瓣app
 DOMAIN-SUFFIX,amonsul.douban.com,REJECT
+DOMAIN-SUFFIX,erebor.douban.com,REJECT
