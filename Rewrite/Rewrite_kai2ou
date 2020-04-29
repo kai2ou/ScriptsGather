@@ -1,2 +1,3 @@
-hostname = 
+hostname = *.doubanio.com
 
+^https?:\/\/img*\.doubanio\.com\/view\/dale-online\/dale_ad\/public\/ url reject-200
