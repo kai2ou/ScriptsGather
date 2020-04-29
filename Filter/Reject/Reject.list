@@ -7,5 +7,6 @@ DOMAIN-SUFFIX,sdk.e.qq.com,REJECT
 # 豆瓣app
 DOMAIN-SUFFIX,amonsul.douban.com,REJECT
 DOMAIN-SUFFIX,erebor.douban.com,REJECT
+DOMAIN-SUFFIX,pgdt.ugdtimg.com,REJECT
 # 腾讯广告接口
 DOMAIN-SUFFIX,mi.gdt.qq.com,REJECT
