@@ -2,6 +2,8 @@
 
 # 懂球帝app
 DOMAIN-SUFFIX,ap.dongqiudi.com,REJECT
+# 彩云天气app
+DOMAIN-SUFFIX,ad.caiyunapp.com,REJECT
 # 腾讯广告接口
 DOMAIN-SUFFIX,sdk.e.qq.com,REJECT
 # 豆瓣app
