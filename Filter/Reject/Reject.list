@@ -3,6 +3,10 @@
 # 懂球帝app
 DOMAIN-SUFFIX,ap.dongqiudi.com,REJECT
 DOMAIN-SUFFIX,im-ap.dongqiudi.com,REJECT
+#头条相关广告
+DOMAIN-SUFFIX,pangolin-sdk-toutiao.com
+DOMAIN,ad.toutiao.com
+DOMAIN,pangolin.snssdk.com
 # 天猫app
 DOMAIN-SUFFIX,amdc.m.taobao.com
 # 京东app
