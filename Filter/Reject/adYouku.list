@@ -1,7 +1,7 @@
 # > Youku
 # > Youku & Tudou
-host-suffix,actives.youku.com
-host-suffix,ad.api.3g.tudou.com
+host-suffix,actives.youku.com,reject
+host-suffix,ad.api.3g.tudou.com,reject
 host-suffix,ad.api.3g.youku.com
 host-suffix,ad.api.mobile.youku.com
 host-suffix,ad.mobile.youku.com
