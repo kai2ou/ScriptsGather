@@ -1,5 +1,25 @@
-hostname = *.doubanio.com
+hostname = www.zhihu.com, api.zhihu.com, link.zhihu.com, api.xueqiu.com, promo.xueqiu.com, iface.iqiyi.com, act.vip.iqiyi.com, api.m.jd.com, ms.jr.jd.com
 
-^https?:\/\/img1\.doubanio\.com\/view\/dale-online\/dale_ad\/ url reject-img
-^https?:\/\/img3\.doubanio\.com\/view\/dale-online\/dale_ad\/ url reject-img
-^https?:\/\/img9\.doubanio\.com\/view\/dale-online\/dale_ad\/ url reject-img
+# 知乎去广告 (By onewayticket255)
+https://api.zhihu.com/(ad|drama|fringe|commercial|market/popover|search/(top|preset|tab)|.*featured-comment-ad) url reject-200
+https://api.zhihu.com/people/ url script-response-body https://raw.githubusercontent.com/onewayticket255/Surge-Script/master/surge%20zhihu%20people.js
+https://api.zhihu.com/moments/recommend url script-response-body https://raw.githubusercontent.com/onewayticket255/Surge-Script/master/surge%20zhihu%20feed.js
+https://api.zhihu.com/topstory/recommend url script-response-body https://raw.githubusercontent.com/onewayticket255/Surge-Script/master/surge%20zhihu%20recommend.js
+https://api.zhihu.com/v4/questions url script-response-body https://raw.githubusercontent.com/onewayticket255/Surge-Script/master/surge%20zhihu%20answer.js
+ 
+ #> 雪球
+^https?+:\/\/api\.xueqiu\.com\/ads\/display url reject-200
+^https?+:\/\/(?>promo|api)\.xueqiu\.com\/promotion\/(?:feed_)?+display url reject-200
+^https?+:\/\/(?>101\.201\.175\.228|182\.92\.251\.113)\/promotion\/(?:feed_)?+display url reject-200
+
+# >> 爱奇艺
+^https?+:\/\/iface\.iqiyi\.com\/api\/getNewAdInfo url reject-200
+^https?+:\/\/.+?\/(?>mixer|track2)\? url reject-200
+^https?+:\/\/act\.vip\.iqiyi\.com\/interact\/api\/show\.do url reject-200
+^https?+:\/\/act\.vip\.iqiyi\.com\/interact\/api\/v2\/show url reject-200
+
+# > 京东
+^https?+:\/\/api\.m\.jd\.com\/client\.action\?functionId=start$ url reject-200
+^https?+:\/\/b?dsp-x\.jd\.com\/adx\/ url reject-200
+^https?+:\/\/ms\.jr\.jd\.com\/gw\/generic\/base\/na\/m\/adInfo url reject-200
+^https?+:\/\/ms\.jr\.jd\.com\/gw\/generic\/aladdin\/na\/m\/getLoadingPicture url reject-200
