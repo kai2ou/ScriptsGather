@@ -1,16 +1,9 @@
-hostname = www.zhihu.com, api.zhihu.com, link.zhihu.com, api.xueqiu.com, promo.xueqiu.com, iface.iqiyi.com, act.vip.iqiyi.com, api.m.jd.com, ms.jr.jd.com
+hostname = api.xueqiu.com, promo.xueqiu.com, iface.iqiyi.com, act.vip.iqiyi.com, api.m.jd.com, ms.jr.jd.com
 
-# 知乎去广告 (By onewayticket255)
-https://api.zhihu.com/(ad|drama|fringe|commercial|market/popover|search/(top|preset|tab)|.*featured-comment-ad) url reject-200
-https://api.zhihu.com/people/ url script-response-body https://raw.githubusercontent.com/onewayticket255/Surge-Script/master/surge%20zhihu%20people.js
-https://api.zhihu.com/moments/recommend url script-response-body https://raw.githubusercontent.com/onewayticket255/Surge-Script/master/surge%20zhihu%20feed.js
-https://api.zhihu.com/topstory/recommend url script-response-body https://raw.githubusercontent.com/onewayticket255/Surge-Script/master/surge%20zhihu%20recommend.js
-https://api.zhihu.com/v4/questions url script-response-body https://raw.githubusercontent.com/onewayticket255/Surge-Script/master/surge%20zhihu%20answer.js
- 
  #> 雪球
-^https?+:\/\/api\.xueqiu\.com\/ads\/display url reject-200
-^https?+:\/\/(?>promo|api)\.xueqiu\.com\/promotion\/(?:feed_)?+display url reject-200
-^https?+:\/\/(?>101\.201\.175\.228|182\.92\.251\.113)\/promotion\/(?:feed_)?+display url reject-200
+#^https?+:\/\/api\.xueqiu\.com\/ads\/display url reject-200
+#^https?+:\/\/(?>promo|api)\.xueqiu\.com\/promotion\/(?:feed_)?+display url reject-200
+#^https?+:\/\/(?>101\.201\.175\.228|182\.92\.251\.113)\/promotion\/(?:feed_)?+display url reject-200
 
 # >> 爱奇艺
 ^https?+:\/\/iface\.iqiyi\.com\/api\/getNewAdInfo url reject-200
