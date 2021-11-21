@@ -1,10 +1,10 @@
-hostname = api.xueqiu.com, promo.xueqiu.com, iface.iqiyi.com, act.vip.iqiyi.com, api.m.jd.com, ms.jr.jd.com
+hostname = api.xueqiu.com, promo.xueqiu.com, 101.201.175.228,182.92.251.113, iface.iqiyi.com, act.vip.iqiyi.com, api.m.jd.com, ms.jr.jd.com
 
  #> 雪球
 #^https?+:\/\/api\.xueqiu\.com\/ads\/display url reject-200
 #^https?+:\/\/(?>promo|api)\.xueqiu\.com\/promotion\/(?:feed_)?+display url reject-200
 #^https?+:\/\/(?>101\.201\.175\.228|182\.92\.251\.113)\/promotion\/(?:feed_)?+display url reject-200
-^https?:\/\/(101\.201\.175\.228)\/brand\/search\/v1\.json url reject-200
+^https?:\/\/(101\.201\.175\.228|182\.92\.251\.113)\/brand\/search\/v1\.json url reject-dict
 
 # >> 爱奇艺
 ^https?+:\/\/iface\.iqiyi\.com\/api\/getNewAdInfo url reject-200
