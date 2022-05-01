@@ -1,24 +1,25 @@
-# Update-2020.4.16 Self-use rule，Kai2ou
+# Update-2022.5.1 Self-use rule，Kai2ou
 
 # 懂球帝app
-DOMAIN-SUFFIX,ap.dongqiudi.com,REJECT
-DOMAIN-SUFFIX,im-ap.dongqiudi.com,REJECT
+host-suffix,ap.dongqiudi.com,REJECT
+host-suffix,im-ap.dongqiudi.com,REJECT
+# 腾讯广告接口
+host-suffix,sdk.e.qq.com,REJECT
+host-suffix,mi.gdt.qq.com,REJECT
+# 彩云天气app
+host-suffix,ad.caiyunapp.com,REJECT
 #头条相关广告
-DOMAIN-SUFFIX,pangolin-sdk-toutiao.com
-DOMAIN-SUFFIX,pglstatp-toutiao.com
+host-suffix,pangolin-sdk-toutiao.com
+host-suffix,pglstatp-toutiao.com
 DOMAIN,ad.toutiao.com
 DOMAIN,pangolin.snssdk.com
 # 天猫app
-DOMAIN-SUFFIX,amdc.m.taobao.com
+host-suffix,amdc.m.taobao.com
 # 京东app
-DOMAIN-SUFFIX,h5.m.jd.com
+host-suffix,h5.m.jd.com
 # 彩云天气app
-DOMAIN-SUFFIX,ad.caiyunapp.com,REJECT
-# 腾讯广告接口
-DOMAIN-SUFFIX,sdk.e.qq.com,REJECT
+host-suffix,ad.caiyunapp.com,REJECT
 # 豆瓣app
-DOMAIN-SUFFIX,amonsul.douban.com,REJECT
-DOMAIN-SUFFIX,erebor.douban.com,REJECT
-DOMAIN-SUFFIX,pgdt.ugdtimg.com,REJECT
-# 腾讯广告接口
-DOMAIN-SUFFIX,mi.gdt.qq.com,REJECT
+host-suffix,amonsul.douban.com,REJECT
+host-suffix,erebor.douban.com,REJECT
+host-suffix,pgdt.ugdtimg.com,REJECT
